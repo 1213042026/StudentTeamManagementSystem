@@ -95,8 +95,6 @@ CREATE TABLE `community_user` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8;
 
-insert into community_user values(1, 'mar', '123', 'dahai', '12145', '158965411', '');
-
 -- ----------------------------
 --  Table structure for `community_web_info`
 -- ----------------------------
@@ -138,7 +136,9 @@ CREATE TABLE `community_web_news` (
 
 SET FOREIGN_KEY_CHECKS = 1;
 
-
+insert into community_user values(1, 'mar', '123', 'dahai', '12145', '158965411', '');
+update community_member set member_type = 2 where user_id = 1;
+insert into community_web_info values(0, '信息学院学生团队网站', 'aa@qq.com', 'China');
 
 
 

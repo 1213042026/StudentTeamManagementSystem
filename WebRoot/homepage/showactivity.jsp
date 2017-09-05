@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta charset="utf-8" />
-<title>部门活动 - 学生部门管理系统</title>
+<title>部门活动 - XXX大学信息学院学生团队系统</title>
 <meta name="description"
 	content="网站描述，一般显示在搜索引擎搜索结果中的描述文字，用于介绍网站，吸引浏览者点击。" />
 <meta name="keywords" content="网站关键词" />
@@ -37,8 +37,8 @@
 			<li id='nav_4' style='width:121px;' class='navdown'><a
 				href='activity.jsp' class='hover-none nav'><span>部门活动</span></a></li>
 			<li class="line"></li>
-			<li id='nav_5' style='width:121px;'><a href='index.jsp'
-				class='hover-none nav'><span>联系我们</span></a></li>
+			<!-- <li id='nav_5' style='width:121px;'><a href='index.jsp'
+				class='hover-none nav'><span>联系我们</span></a></li> -->
 			<li class="line"></li>
 			<li id='nav_6' style='width:120px;'><a href='../login.jsp'
 				class='hover-none nav'><span>学生登录</span></a></li>
@@ -70,7 +70,7 @@
 
 			<h3 class='title line myCorner' data-corner='top 5px'>联系方式</h3>
 			<div class="active editor">
-				<div>XXX大学XXX学院</div>
+				<div>XXX大学信息学院</div>
 				<div>电 &nbsp;话：0000-888888</div>
 				<div>邮 &nbsp;编：000000</div>
 				<div>Email：admin@admin.cn</div>

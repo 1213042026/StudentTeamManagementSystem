@@ -23,7 +23,7 @@ $(document).ready(function () {
     
     if (validateUser()) {
     	$('#nav_6').remove()
-    	$('#list-none').append("<li id='nav_7' style='width:120px'><a href='../login.jsp' class='hover-none nav'><span>个人信息</span></a><li class='line'></li>")
+    	$('#list-none').append("<li id='nav_7' style='width:120px'><a href='user_info.jsp' class='hover-none nav'><span>个人信息</span></a><li class='line'></li>")
     	$('#list-none').append("<li id='nav_8' style='width:120px; border-top-right-radius: 5px;'><a href='../user!homepage_logout.action' class='hover-none nav'><span>退出登录</span></a>")
     } else {
     	$('#nav_6').remove()

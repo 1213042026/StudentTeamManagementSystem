@@ -10,7 +10,7 @@
 	<form enctype="multipart/form-data" method="post" 
 		action="community!saveOrUpdate.action?callbackType=closeCurrent"
 		class="pageForm required-validate"
-		onsubmit="return iframeCallback(this, navTabAjaxDone);"">
+		onsubmit="return iframeCallback(this, navTabAjaxDone);">
 		<div class="pageFormContent nowrap" layoutH="97">
 			<input value="9999" type="hidden" name="community.id"/>
 			<dl>

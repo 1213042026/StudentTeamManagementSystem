@@ -8,7 +8,7 @@
 <meta http-equiv="Cache-Control" content="no-cache">
 <meta http-equiv="Expires" content="0">
 <meta charset="utf-8" />
-<title>网站关键词-网站名称</title>
+<title>网站首页</title>
 <meta name="description"
 	content="网站描述，一般显示在搜索引擎搜索结果中的描述文字，用于介绍网站，吸引浏览者点击。" />
 <meta name="keywords" content="网站关键词" />
@@ -50,8 +50,8 @@
 			<li id='nav_4' style='width:121px;'><a href='activity.jsp'
 				class='hover-none nav'><span>部门活动</span></a></li>
 			<li class="line"></li>
-			<li id='nav_5' style='width:121px;'><a href='index.jsp'
-				class='hover-none nav'><span>联系我们</span></a></li>
+			<!-- <li id='nav_5' style='width:121px;'><a href='index.jsp'
+				class='hover-none nav'><span>联系我们</span></a></li> -->
 			<li class="line"></li>
 			<li id='nav_6' style='width:120px;'><a href='../login.jsp'
 				class='hover-none nav'><span>学生登录</span></a></li>
@@ -98,7 +98,7 @@
 			</h3>
 			<div class="active editor clear contour-1">
 				<div style="padding-top:10px;">
-					<span style="font-size:14px;"><strong>XXX大学XXX学院部门管理系统</strong></span>
+					<span style="font-size:14px;"><strong>XXX大学信息学院学生团队管理系统</strong></span>
 				</div>
 				<div id="introduction"></div>
 				<div>&nbsp;</div>
@@ -157,7 +157,7 @@
 	<footer data-module="10001" data-classnow="10001">
 	<div class="foot-text">
 		<p></p>
-		<p>我的网站 版权所有 2008-2017</p>
+		<p>版权所有 2017-</p>
 		<p>电话：1234567 QQ:88888888 Email:abcdfbg@gmail.com</p>
 
 
