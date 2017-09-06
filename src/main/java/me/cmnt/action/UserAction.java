@@ -276,12 +276,12 @@ public class UserAction extends BaseAction {
 				return "login";
 			}
 			userService.save(user);
-			Member member = new Member();
-			member.setUser_id(user.getId());
-			member.setCommunity_id(0);
-			member.setMember_type(1);
-			member.setMember_status(0);
-			memberService.save(member);
+			// Member member = new Member();
+			// member.setUser_id(user.getId());
+			// member.setCommunity_id(0);
+			// member.setMember_type(1);
+			// member.setMember_status(0);
+			// memberService.save(member);
 			flag = "注册成功！";
 			return "login";
 		}

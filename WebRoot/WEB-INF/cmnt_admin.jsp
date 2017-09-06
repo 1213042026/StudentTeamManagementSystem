@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>校园部门活动管理系统（部门管理员）</title>
+<title>信息学院学生团队管理系统（部门管理员）</title>
 
 <link href="themes/default/style.css" rel="stylesheet" type="text/css" media="screen"/>
 <link href="themes/css/core.css" rel="stylesheet" type="text/css" media="screen"/>
@@ -140,12 +140,12 @@ $(function(){
 					<div class="page unitBox">
 						<div class="accountInfo">
 							<div class="alertInfo">
-								<p><a href="https://code.csdn.net/dwzteam/dwz_jui/tree/master/doc" target="_blank" style="line-height:19px"><span>欢迎进入部门管理系统</span></a></p>
+								<p><a href="https://code.csdn.net/dwzteam/dwz_jui/tree/master/doc" target="_blank" style="line-height:19px"><span>欢迎进入信息学院学生团队部门管理系统</span></a></p>
 							</div>
 							<div class="right">
 								<p style="color:red">联系电话 ：0571-xxxxxxxx</p>
 							</div>
-							<p><span>欢迎进入部门管理系统（部门管理员）</span></p>
+							<p><span>欢迎进入信息学院学生团队部门管理系统（部门管理员）</span></p>
 							<p>个人信息：</p>
 						</div>
 						<div class="pageFormContent" layoutH="80" style="margin-right:230px">
@@ -159,7 +159,7 @@ $(function(){
 									<label>您的电话:</label><span class="unit">${user.user_tel}</span>
 								</p>
 								<p>
-									<label>用户类型:</label><span class="unit">部长</span>
+									<label>用户类型:</label><span class="unit">部长（部门管理员）</span>
 								</p>
 						</div>
 						
@@ -173,7 +173,7 @@ $(function(){
 
 	</div>
 
-	<div id="footer">Copyright &copy; 2010 <a href="demo_page2.html" target="dialog">xxxxxxx</a> 浙ICP备00000000号-10</div>
+	<div id="footer">Copyright &copy; 2017 <a href="demo_page2.html" target="dialog">xxxxxxx</a> 沪ICP备00000000号-10</div>
 
 
 </body>

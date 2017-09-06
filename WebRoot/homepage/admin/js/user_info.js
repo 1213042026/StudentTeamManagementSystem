@@ -16,7 +16,7 @@ $(document).ready(function () {
         	$('#user_name').append('<span>学生姓名：</span>' + msgUser.user_name);
         	$('#user_id').append('<span>学生学号：</span>' + msgUser.user_id);
         	$('#user_tel').append('<span>联系方式：</span>' + msgUser.user_tel);
-        	$('#user_img').attr('src', 'http://127.0.0.1:8080/community/' + msgUser.user_img)
+        	$('#user_img').attr('src', 'http://127.0.0.1:8080/StudentCommunity/' + msgUser.user_img)
         	var community_name_str = ''
         	if (msgCmnt != null) {
 		    	 $.each(msgCmnt, function (i, value) {

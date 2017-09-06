@@ -21,7 +21,7 @@ $(document).ready(function () {
             		// 如果是2,5,8
             		tr_tail = '</tr>'
             	}
-                tr = tr + tr_head + '<td style="display: table-cell"><dt><a href="showcommunity.jsp?uid=' + value.id + '" target="_self"><img src="http://127.0.0.1:8080/community/' + value.community_img_path + '" alt="图片关键词" title="图片关键词" style="width:200px; height:150px;" /></a>' +
+                tr = tr + tr_head + '<td style="display: table-cell"><dt><a href="showcommunity.jsp?uid=' + value.id + '" target="_self"><img src="http://127.0.0.1:8080/StudentCommunity/' + value.community_img_path + '" alt="图片关键词" title="图片关键词" style="width:200px; height:150px;" /></a>' +
                 	'</dt><dd><h4><a href="showcommunity.jsp?uid=' + value.id + '" target="_self" title="' + value.community_name + '">' + value.community_name + '</a></h4></dd></td>' + tr_tail
             });
         	$('.table_list').append(tr)

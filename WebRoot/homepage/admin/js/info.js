@@ -22,7 +22,7 @@ $(document).ready(function () {
             $.each(eval("(" + data.msgCmnt + ")"), function (i, value) {
             	if (i < 2) {
 	                $('#list_communities').append('<dl class="ind"><dt style="height: 80px;"><a href="showcommunity.jsp?uid=' + value.id + '" target="_self">' +
-	                    '<img src="http://127.0.0.1:8080/community/' + value.community_img_path + '" alt="图片关键词" title="图片关键词" style="width:116px; ' +
+	                    '<img src="http://127.0.0.1:8080/StudentCommunity/' + value.community_img_path + '" alt="图片关键词" title="图片关键词" style="width:116px; ' +
 	                    'height:80px;"/></a></dt><dd style="width: 149px; height: 80px;"> <h4><a href="#" target="_self" title="部门信息">' + value.community_name + '</a></h4> ' +
 	                    '<p class="desc" title="部门介绍">' + value.community_introduction + '</p>' +
 	                    ' </dd></dl>')

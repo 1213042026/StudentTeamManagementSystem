@@ -39,7 +39,7 @@ $(document).ready(function () {
 	        		$('#cmnt_proper_name').append('<span>部长名称：</span>该部门暂无部长')
 	        	}
 	        	$('#cmnt_intro').append('<span>部门介绍：</span>' + community.community_introduction)
-	        	$('#cmnt_img').attr('src', 'http://127.0.0.1:8080/community/' + community.community_img_path)
+	        	$('#cmnt_img').attr('src', 'http://127.0.0.1:8080/StudentCommunity/' + community.community_img_path)
         	}
         }
     });

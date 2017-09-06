@@ -13,7 +13,7 @@ $(document).ready(function () {
         	$('h1.title').text(newsDetails.news_title)
         	$('div.author_time').text('作者：管理员 ；   更新时间：' + newsDetails.insert_time.split('.')[0] + ' ')
         	$('div.article').text('    ' + newsDetails.news_content)
-        	$('#news_img').attr('src', 'http://127.0.0.1:8080/community/' + newsDetails.news_img_path)
+        	$('#news_img').attr('src', 'http://127.0.0.1:8080/StudentCommunity/' + newsDetails.news_img_path)
         }
     });
     

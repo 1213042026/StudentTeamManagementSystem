@@ -22,28 +22,9 @@
 
 建表语句如下：
 
-```
+create database community;
+use community;
 
-/*
- Navicat Premium Data Transfer
-
- Source Server         : localhost
- Source Server Type    : MySQL
- Source Server Version : 50710
- Source Host           : localhost
- Source Database       : community
-
- Target Server Type    : MySQL
- Target Server Version : 50710
- File Encoding         : utf-8
-*/
-
-SET NAMES utf8;
-SET FOREIGN_KEY_CHECKS = 0;
-
--- ----------------------------
---  Table structure for `community`
--- ----------------------------
 DROP TABLE IF EXISTS `community`;
 CREATE TABLE `community` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -51,11 +32,8 @@ CREATE TABLE `community` (
   `community_introduction` varchar(255) DEFAULT '' COMMENT '部门简介',
   `community_img_path` varchar(255) DEFAULT '' COMMENT '部门图片路径',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=23 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
 
--- ----------------------------
---  Table structure for `community_activity`
--- ----------------------------
 DROP TABLE IF EXISTS `community_activity`;
 CREATE TABLE `community_activity` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -64,11 +42,8 @@ CREATE TABLE `community_activity` (
   `community_id` int(11) DEFAULT '0' COMMENT '部门id',
   `start_time` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
 
--- ----------------------------
---  Table structure for `community_member`
--- ----------------------------
 DROP TABLE IF EXISTS `community_member`;
 CREATE TABLE `community_member` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -78,11 +53,8 @@ CREATE TABLE `community_member` (
   `member_type` int(11) DEFAULT '1' COMMENT '1：学生；2：部门管理员（部长）；3：管理员',
   `member_apply_reason` varchar(255) DEFAULT NULL COMMENT '申请理由',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
 
--- ----------------------------
---  Table structure for `community_user`
--- ----------------------------
 DROP TABLE IF EXISTS `community_user`;
 CREATE TABLE `community_user` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -93,11 +65,8 @@ CREATE TABLE `community_user` (
   `user_tel` varchar(100) NOT NULL DEFAULT '' COMMENT '电话',
   `user_img` varchar(255) DEFAULT NULL COMMENT '用户头像',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
 
--- ----------------------------
---  Table structure for `community_web_info`
--- ----------------------------
 DROP TABLE IF EXISTS `community_web_info`;
 CREATE TABLE `community_web_info` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -105,11 +74,8 @@ CREATE TABLE `community_web_info` (
   `tel` varchar(255) NOT NULL COMMENT '联系我们',
   `addres` varchar(255) DEFAULT NULL COMMENT '地址',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
 
--- ----------------------------
---  Table structure for `community_web_message`
--- ----------------------------
 DROP TABLE IF EXISTS `community_web_message`;
 CREATE TABLE `community_web_message` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -118,11 +84,8 @@ CREATE TABLE `community_web_message` (
   `news_id` int(11) DEFAULT NULL COMMENT '对应的新闻id',
   `insert_time` datetime DEFAULT NULL COMMENT '插入时间',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
 
--- ----------------------------
---  Table structure for `community_web_news`
--- ----------------------------
 DROP TABLE IF EXISTS `community_web_news`;
 CREATE TABLE `community_web_news` (
   `id` int(11) NOT NULL AUTO_INCREMENT COMMENT '主页信息',
@@ -132,15 +95,23 @@ CREATE TABLE `community_web_news` (
   `insert_time` datetime DEFAULT NULL COMMENT '发布时间',
   `news_img_path` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
 
-SET FOREIGN_KEY_CHECKS = 1;
+创建管理员
+insert into community_user values(1, 'admin', '123', 'name', 'student number', 'phone', '');
+insert into community_member values(1, 1, 0, 1, 3, "");
 
-insert into community_user values(1, 'mar', '123', 'dahai', '12145', '158965411', '');
-update community_member set member_type = 2 where user_id = 1;
+创建网站信息
 insert into community_web_info values(0, '信息学院学生团队网站', 'aa@qq.com', 'China');
 
+## NOTE
+如果项目404 右击项目修改(添加)部署程序集路径/webRoot 为/
 
+struts.xml
+<constant name="struts.multipart.saveDir" value="/home/user/workspace/StudentCommunity/WebRoot/upload"></constant>
+上传文件保存路径改为windows上对应的绝对路径
+
+实际图片保存在/home/user/workspace/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/StudentCommunity/
 
 
 
