@@ -97,6 +97,16 @@ CREATE TABLE `community_web_news` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
 
+DROP TABLE IF EXISTS `community_check_in`;
+CREATE TABLE `community_check_in` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `user_id` varchar(100) NOT NULL DEFAULT '' COMMENT '学号',
+  `time` varchar(255) NOT NULL COMMENT '时长',
+  `record_time` datetime DEFAULT NULL COMMENT '记录时间',
+  `recorder` varchar(100) NOT NULL DEFAULT '' COMMENT '记录人ID',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
+
 创建管理员
 insert into community_user values(1, 'admin', '123', 'name', 'student number', 'phone', '');
 insert into community_member values(1, 1, 0, 1, 3, "");

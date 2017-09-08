@@ -111,8 +111,18 @@ $(function(){
 					</div>	
 					<div class="accordionContent">
 						<ul class="tree treeFolder">		
-							<li><a href="member!selectMemberByCommunityId.action" target="navTab" title="进度查询">成员查询</a></li>
+							<li><a href="member!selectMemberByCommunityId.action" target="navTab" title="成员查询">成员查询</a></li>
 							<li><a href="member!selectApplicationMember.action" target="navTab" title="成员申请">成员申请</a></li>
+						</ul>
+					</div>
+
+					<div class="accordionHeader">
+						<h2><span>Folder</span>考勤管理</h2>
+					</div>	
+					<div class="accordionContent">
+						<ul class="tree treeFolder">		
+							<li><a href="checkin!selectCheckInByCommunityId.action" target="navTab" title="考勤记录">查看考勤记录</a></li>
+							<li><a href="checkin!importCheckIn.action?user_id=${user.id}" target="navTab" rel="importCheckIn" title="导入考勤记录">导入考勤记录</a></li>
 						</ul>
 						
 					</div>
