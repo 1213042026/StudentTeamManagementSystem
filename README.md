@@ -4,7 +4,7 @@
 ## 功能介绍
 本系统分为学生，部长，管理员三种角色
 
-系统主页包括网站首页、网站简介、**站内新闻**、**部门浏览**、**部门活动**，**用户评论**，**图片上传**等功能
+系统主页包括**网站首页**、**网站简介**、**站内新闻**、**部门浏览**、**部门活动**，**用户评论**，**考勤管理**等功能
 
 后台管理页面分为管理员和部长两部分，根据登录的账号密码划分
 
@@ -104,6 +104,8 @@ CREATE TABLE `community_check_in` (
   `time` varchar(255) NOT NULL COMMENT '时长',
   `record_time` datetime DEFAULT NULL COMMENT '记录时间',
   `recorder` varchar(100) NOT NULL DEFAULT '' COMMENT '记录人ID',
+  `community_id` varchar(100) NOT NULL DEFAULT '' COMMENT '部门ID',
+  `username` varchar(100) NOT NULL DEFAULT '' COMMENT '用户名',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
 

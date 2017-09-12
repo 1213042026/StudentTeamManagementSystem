@@ -17,6 +17,9 @@ public class CheckIn {
 	@Column(name = "user_id")
 	private String user_id;
 	
+	@Column(name = "username")
+	private String username;
+	
 	@Column(name = "time")
 	private String time;
 	
@@ -26,7 +29,18 @@ public class CheckIn {
 	@Column(name = "recorder")
 	private String recorder;
 	
+	@Column(name = "community_id")
+	private String community_id;
+	
 	public CheckIn() {
+	}
+
+	public String getUsername() {
+		return username;
+	}
+
+	public void setUsername(String username) {
+		this.username = username;
 	}
 
 	@Override
@@ -35,11 +49,21 @@ public class CheckIn {
 				+ ", recorder=" + recorder + "]";
 	}
 
-	public CheckIn(String user_id, String time, String record_time, String recorder) {
+	public CheckIn(String user_id, String time, String record_time, String recorder, String community_id, String username) {
 		this.user_id = user_id;
 		this.time = time;
 		this.record_time = record_time;
 		this.recorder = recorder;
+		this.community_id = community_id;
+		this.username = username;
+	}
+	
+	public String getCommunity_id() {
+		return community_id;
+	}
+
+	public void setCommunity_id(String community_id) {
+		this.community_id = community_id;
 	}
 
 	public int getId() {

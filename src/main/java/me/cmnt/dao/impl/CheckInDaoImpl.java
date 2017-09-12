@@ -16,7 +16,7 @@ public class CheckInDaoImpl extends BaseDaoImpl {
 			switch (queryType) {
 				case 0: HQL = "from CheckIn"; break;
 				case 1: HQL = "from CheckIn where id = " + checkIn.getId(); break;
-				case 2: HQL = "from CheckIn where user_id =" + checkIn.getUser_id(); break;
+				case 2: HQL = "from CheckIn where community_id =" + checkIn.getCommunity_id(); break;
 				case 3: HQL = "from CheckIn"; break;
 				default: break;
 			}
