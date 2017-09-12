@@ -163,7 +163,7 @@ $(function(){
 
 	</div>
 
-	<div id="footer">Copyright &copy; 2011 <a href="demo_page2.html" target="dialog">xxxxxxxx</a> 沪ICP备00000000号-10</div>
+	<div id="footer">Copyright &copy; 2017 <a href="demo_page2.html" target="dialog">xxxxxxxx</a> 沪ICP备00000000号-10</div>
 
 
 </body>
